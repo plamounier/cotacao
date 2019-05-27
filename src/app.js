@@ -92,6 +92,10 @@ app.get('*',(req, res) => {
         })
 })
 
+// Se a porta já estiver configurada por variavel de ambiente como no caso do heroku
+// ele pega da variavel de ambiente caso contrário pega da porta 3000
+const port = process.env.port || 3000;
+
 // Aqui é definido o servidor cuja porta default do node é 3000.
 app.listen(3000, () => {
     console.log('Server is running o port 3000.');
