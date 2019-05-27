@@ -96,9 +96,7 @@ app.get('*',(req, res) => {
 // ele pega da variavel de ambiente caso contrário pega da porta 3000
 const port = process.env.PORT || 3000;
 
-
-
 // Aqui é definido o servidor cuja porta default do node é 3000.
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Server is running o port 3000.');
 });
