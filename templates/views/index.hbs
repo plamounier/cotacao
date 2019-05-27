@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Início</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <div class="main-content">
+       {{>header}}
+
+        <p>Procure um ativo</p>
+       <form>
+           <label for="codAtivo">Ativo: </label>
+           <input id="codAtivo" type="text" placeholder="Código do Ativo">
+           <button>Procurar</button>
+            <h3></h3>
+           <ul>
+                    <li id="price"></li>
+                    <li id="price_open"></li>
+                    <li id="day_high"></li>
+                    <li id="day_low"></li>
+
+           </ul>
+       </form>
+    </div>
+     {{>footer}}
+     
+     <script src=./js/app.js></script>
+</body>
+</html>
